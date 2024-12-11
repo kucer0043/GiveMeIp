@@ -19,14 +19,14 @@ Each client will assign itself a retranslator through which it will receive mess
 ### Example IP:
 
 ```
-173.194.73.139:8080::115162
+173.194.73.139:8080::OOMG
 ```
 
 ### What It Means:
 
 ```
-IP Address of Retranslator | Port of Retranslator | Last 6 digits of the recipient's IP
-173.194.73.139             : 8080                 :: 115162
+IP Address of Retranslator | Port of Retranslator | Last 4 random chars
+173.194.73.139             : 8080                 :: OOMG
 ```
 
 ### Scenario:
