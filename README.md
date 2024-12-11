@@ -38,6 +38,10 @@ Imagine a client (with a grey IP) wants to receive data from another client (als
 3. The second client sends the requested data back to the retranslator.
 4. The retranslator forwards this data to the first client.
 
-## Conclusion
 
-This system aims to solve the limitations of IPv4 by allowing devices without white IPs to communicate effectively through retranslators.
+# Protocol
+[Protocol](protocol.md)
+
+# Support Me
+
+TON Network: UQBupVqXGQHoHhRfLYRqLFqhHt1KznRNiwRiifZWx_d5SKmG
