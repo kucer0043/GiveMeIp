@@ -1,47 +1,46 @@
-# My Crazy Idea: Creating a New IP Addressing System
+# IPvDIY
 
-## Why I Don't Like IPv4?
+БСБ представляет
 
-The main issue with IPv4 is that not everyone has a **WHITE IP** (in short, if you have a white IP, you can host servers on the internet).
+## Описание проекта
 
-## What Am I Proposing?
+У нас есть идея — создать свою уникальную систему IP адресов. Данная система нацелена на решение проблемы отсутствия белых IP-адресов у большинства пользователей, что затрудняет хостинг серверов в интернете.
 
-A solution to all problems!
+## Почему мы не любим IPv4?
 
-### What I Want to Do:
+IPv4 имеет свои недостатки, особенно в контексте наличия белых IP-адресов. Большинство клиентов (например, домашних пользователей) имеют серые IP-адреса, что делает их не способными к прямому хостингу. Эта система предложит новый подход.
 
-(You probably won't understand what I wrote)
+## Что мы предлагаем?
 
-Let me explain it to you. Imagine we have a device in the network without a white IP, let's call it the **client**. Now, imagine we have another device in the network with a white IP, let's call it the **retranslator**.
+Мы предлагаем решение всех проблем, связанных с IP-адресацией. В нашей системе будет два типа устройств:
 
-Each client will assign itself a retranslator through which it will receive messages.
+1. Клиент — устройство, не имеющее белого IP-адреса.
+2. Ретранслятор — устройство с белым IP-адресом, которое выступает как посредник.
 
-### Example IP:
+## Как это работает?
 
-```
-173.194.73.139:8080::OOMG
-```
-
-### What It Means:
+Каждый клиент выбирает себе ретранслятор, через который он будет отправлять и получать сообщения. Пример IP в нашей системе выглядит следующим образом:
 
 ```
-IP Address of Retranslator | Port of Retranslator | Last 4 random chars
-173.194.73.139             : 8080                 :: OOMG
+173.194.73.139:8080::5162
 ```
 
-### Scenario:
 
-Imagine a client (with a grey IP) wants to receive data from another client (also with a grey IP). Here's what happens:
+Что означает данный IP?
 
-1. The first client contacts the retranslator of the second client.
-2. The second client is already connected to the retranslator, so the second client receives the message from the retranslator.
-3. The second client sends the requested data back to the retranslator.
-4. The retranslator forwards this data to the first client.
+- 173.194.73.139 — IP-адрес ретранслятора
+- 8080 — порт ретранслятора
+- 5162 — последние 4 цифр IP-адреса получателя
+
+## Пример работы системы:
+
+Представим ситуацию, в которой Клиент (серый IP) хочет получить данные от другого Клиента (тоже серый IP):
+
+1. Первый Клиент обращается к Ретранслятору Второго Клиента.
+2. Второй Клиент уже подключен к Ретранслятору, поэтому он получает сообщение от него.
+3. Второй Клиент отправляет ответные данные Ретранслятору, запрашиваемые первым Клиентом.
+4. Ретранслятор пересылает их обратно к Первому Клиенту.
 
 
-# Protocol
-[Protocol](protocol.md)
 
-# Support Me
-
-TON Network: UQBupVqXGQHoHhRfLYRqLFqhHt1KznRNiwRiifZWx_d5SKmG
+Наша система IP адресации предназначена для улучшения связи между устройствами в сетях с серыми IP-адресами, позволяя пользователям эффективно обмениваться данными без необходимости наличия белого IP. Мы уверены, что это поможет многим пользователям в будущем!
